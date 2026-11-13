@@ -1,0 +1,13 @@
+{
+  "schema": "riblet-frozen-parameter-files-v1",
+  "bert": {
+    "public-schedule.json": "cd89279277f3c2623a63f82629e4c05f5936de3cee3e95c67c6be549de773ca1",
+    "private-sites.json": "40ebcdf5eb3ee601c1f475f1993dd3063236b9910e19a57330fbd11568096013"
+  },
+  "vit": {
+    "coefficients-encoded-private.npy": "c40b4d95c1c7de3f701032bedb5da138292d81f23e1a970fb72457c23c2b6b5a",
+    "joint-private.json": "2d7b04c7f72fc2e5ee891226e6330ae07185852f0461ef9ae88fc2de8db2c3d2",
+    "audit.json": "2d80ba9096885a9cd7133162d80a5f3a963769de5b0a2038f3670412a5d34cfa",
+    "public-deployment-metadata.json": "b52dbfdea38760cef7bcda2298127856701c972571b784dda6854a2dc9303bef"
+  }
+}

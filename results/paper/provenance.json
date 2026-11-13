@@ -1,0 +1,20 @@
+{
+  "formal_executions": 36,
+  "distinct_inputs": 18,
+  "groups": 18,
+  "bert": {
+    "profile": "public-site-pad128",
+    "formal_source_sha256": "ec197a6d0aac2c5cb08336fc38ef59d0742567529e955aef0a5880f7c234ffd0",
+    "group_source_sha256": "8def1557f26af6f0e4ff55803241161be33502b3a07cd0a2f0835abc557d32bd",
+    "formal_requests": 32
+  },
+  "vit": {
+    "formal_requests": 4,
+    "original_sources": {
+      "SYSTEM_RESULTS.json": "8c469be7ce1f08c425795510b4a64d0fdcd73f6924e510688d8d315737ac36ef",
+      "REFERENCE_INDEX.json": "55fd89ef0fd8512dad48185d925cc799e5c19e0e4ae6f85b7ad8a5154e338a8c",
+      "SETUP_EVENTS.json": "badc91ef84108824dd48195c575f7c0c0eebef5ede3b8ed74cd6392a2a617096"
+    }
+  },
+  "scope": "Formal two-party measurements, two distinct inputs per task and network. BERT measured YACL plus actual inter-party RPC payload; the release runner uses its direct link."
+}

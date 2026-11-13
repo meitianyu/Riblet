@@ -1,0 +1,500 @@
+[
+  {
+    "event_id": "setup-2565d0f4b1a83669",
+    "seconds": 20.748337147,
+    "sent_bytes": 2749422244,
+    "actual_consumers": 2,
+    "supports_requests": [
+      "extra-warmup-vit-ILSVRC2012_val_00016089.JPEG",
+      "samples-eval-v2-imagenet1k-01"
+    ],
+    "actual_reuse": true,
+    "model": "vit",
+    "task": "imagenet1k",
+    "method": "ours",
+    "network": "lan"
+  },
+  {
+    "model": "vit",
+    "task": "imagenet1k",
+    "method": "ours",
+    "actual_consumers": 2,
+    "actual_formal_consumers": 1,
+    "event_id": "setup-83c422da8ccf07e7",
+    "kind": "shared",
+    "seconds": 20.749813943,
+    "sent_bytes": 2749422244,
+    "supports_requests": [
+      "extra-warmup-vit-ILSVRC2012_val_00016089.JPEG",
+      "samples-eval-v2-imagenet1k-02"
+    ],
+    "actual_reuse": true,
+    "network": "lan"
+  },
+  {
+    "model": "vit",
+    "task": "imagenet1k",
+    "method": "ours",
+    "actual_consumers": 3,
+    "actual_formal_consumers": 2,
+    "event_id": "setup-9ffed62c712ea4c5",
+    "kind": "shared",
+    "seconds": 62.421914074,
+    "sent_bytes": 2749422244,
+    "supports_requests": [
+      "extra-warmup-vit-ILSVRC2012_val_00016089.JPEG",
+      "samples-eval-v2-imagenet1k-01",
+      "samples-eval-v2-imagenet1k-02"
+    ],
+    "actual_reuse": true,
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17634531755425843",
+    "seconds": 22.07671699,
+    "sent_bytes": 3491221781,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-cola-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "cola",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17632854436479027",
+    "seconds": 71.629095077,
+    "sent_bytes": 3491221759,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-cola-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "cola",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17634531772203059",
+    "seconds": 22.806713108,
+    "sent_bytes": 3491221781,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-cola-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "cola",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17632854453256243",
+    "seconds": 72.155360966,
+    "sent_bytes": 3491221759,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-cola-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "cola",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854084157491",
+    "seconds": 22.01532595,
+    "sent_bytes": 3491246347,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-mnli-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "mnli",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17632854486810675",
+    "seconds": 71.867512084,
+    "sent_bytes": 3491246347,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-mnli-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "mnli",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854100934707",
+    "seconds": 22.833117066,
+    "sent_bytes": 3491246347,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-mnli-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "mnli",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17636209477025843",
+    "seconds": 72.402208104,
+    "sent_bytes": 3491246298,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-mnli-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "mnli",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854134489139",
+    "seconds": 22.238079763,
+    "sent_bytes": 3491221759,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-mrpc-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "mrpc",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17632854537142323",
+    "seconds": 71.687952286,
+    "sent_bytes": 3491221759,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-mrpc-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "mrpc",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854151266355",
+    "seconds": 22.923700317,
+    "sent_bytes": 3491221759,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-mrpc-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "mrpc",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17632854553919539",
+    "seconds": 72.200151926,
+    "sent_bytes": 3491221759,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-mrpc-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "mrpc",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854184820787",
+    "seconds": 22.318523917,
+    "sent_bytes": 3491221759,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-qnli-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "qnli",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17636209510580275",
+    "seconds": 72.458673655,
+    "sent_bytes": 3491221779,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-qnli-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "qnli",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854201598003",
+    "seconds": 22.735016585,
+    "sent_bytes": 3491221759,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-qnli-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "qnli",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17636209527357491",
+    "seconds": 72.379313095,
+    "sent_bytes": 3491221779,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-qnli-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "qnli",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854235152435",
+    "seconds": 22.398193571,
+    "sent_bytes": 3491221757,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-qqp-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "qqp",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17632854637805619",
+    "seconds": 71.414368157,
+    "sent_bytes": 3491221757,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-qqp-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "qqp",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854251929651",
+    "seconds": 22.749881289,
+    "sent_bytes": 3491221757,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-qqp-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "qqp",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17632854654582835",
+    "seconds": 72.398368954,
+    "sent_bytes": 3491221757,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-qqp-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "qqp",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854285484083",
+    "seconds": 22.002729975,
+    "sent_bytes": 3491221757,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-rte-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "rte",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17636209560911923",
+    "seconds": 72.293772098,
+    "sent_bytes": 3491221777,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-rte-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "rte",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854302261299",
+    "seconds": 22.915437889,
+    "sent_bytes": 3491221757,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-rte-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "rte",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17636209577689139",
+    "seconds": 72.621875529,
+    "sent_bytes": 3491221777,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-rte-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "rte",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854335815731",
+    "seconds": 22.011021409,
+    "sent_bytes": 3491221690,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-sst2-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "sst2",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17632854738468915",
+    "seconds": 71.601758099,
+    "sent_bytes": 3491221690,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-sst2-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "sst2",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854352592947",
+    "seconds": 23.289774114,
+    "sent_bytes": 3491221690,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-sst2-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "sst2",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17632854755246131",
+    "seconds": 71.844203321,
+    "sent_bytes": 3491221690,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-sst2-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "sst2",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854386147379",
+    "seconds": 22.308005436,
+    "sent_bytes": 3491197175,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-stsb-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "stsb",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17632854788800563",
+    "seconds": 71.809452592,
+    "sent_bytes": 3491197175,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-stsb-01"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "stsb",
+    "method": "Riblet",
+    "network": "wan"
+  },
+  {
+    "event_id": "setup-17632854402924595",
+    "seconds": 22.741826178,
+    "sent_bytes": 3491197175,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-stsb-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "stsb",
+    "method": "Riblet",
+    "network": "lan"
+  },
+  {
+    "event_id": "setup-17632854805577779",
+    "seconds": 71.990535381,
+    "sent_bytes": 3491197175,
+    "actual_consumers": 1,
+    "supports_requests": [
+      "samples-eval-v2-stsb-02"
+    ],
+    "actual_reuse": false,
+    "model": "bert",
+    "task": "stsb",
+    "method": "Riblet",
+    "network": "wan"
+  }
+]

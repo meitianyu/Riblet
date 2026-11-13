@@ -1,0 +1,140 @@
+{
+  "schema_version": "bert-public-site-f18-p12-v1",
+  "family_id": "public-site-f18-p12",
+  "graph_id": "BERT_PUBLIC_SITE_pad128_NATIVE_INVERSE18",
+  "requested_modes": [
+    "joint"
+  ],
+  "precision": {
+    "ring_bits": 64,
+    "fractional_bits": 18,
+    "scale": 262144,
+    "N_max": 128
+  },
+  "numeric_abi": {
+    "id": "CDI_FM64_FXP18_G9_NATIVE_V2",
+    "ring_bits": 64,
+    "fractional_bits": 18,
+    "scale": 262144,
+    "coefficient_encoding": "float_times_scale_cast_signed_integer_toward_zero",
+    "multiply": "native_Cheetah_mul_then_trunc_shift18",
+    "truncation": "Cheetah_TruncateProtocol_signed_share_reconstruction_balancing_bit",
+    "negative_truncation": "native_signed_conversion_not_REF2K_nearest",
+    "Half": "separate_native_trunc_shift1_after_last_Newton_mul_shift18",
+    "native_probabilistic_truncation_allowed": true,
+    "truncation_heuristic": {
+      "enabled": true,
+      "raw_min_inclusive": "-4611686018427387904",
+      "raw_max_exclusive": "4611686018427387904"
+    },
+    "cheetah": {
+      "ot_kind": "YACL_Ferret",
+      "enable_mul_lsb_error": true,
+      "approx_less_precision": 4
+    },
+    "raw_multiplication_reference": "explicit_observed_delta_or_exact_raw_characterization;not_an_assumed_RLWE_error_distribution",
+    "rsqrt_compensation": {
+      "guard_bits": 9,
+      "sqrt2_word": 370727,
+      "power_two_word": 262144,
+      "compensation_scale_bits": 27,
+      "final_product_shift": 27,
+      "normalizer_input_encoded_min": 1,
+      "normalizer_input_encoded_max_exclusive": "34359738368"
+    },
+    "spu_rsqrt_polynomial": {
+      "degree": 4,
+      "tail_sum_sign_hint": "negative",
+      "constant_added_after_tail_truncation": true,
+      "newton_iterations": 0
+    },
+    "reciprocal": {
+      "trajectory": [
+        "y=Mul18(a,D)+b",
+        "xy=Mul18(D,y)",
+        "y=Mul18(y,2*S-xy)"
+      ],
+      "spu_sign_handling": "unchanged_general_reciprocal",
+      "final_p12": "abs(S^2-Dhat*yhat)<=2^24",
+      "development_design_gate": "abs(S^2-Dhat*yhat)<2^24"
+    },
+    "rsqrt": {
+      "trajectory": [
+        "y=Mul18(a,x)+b",
+        "yy=Mul18(y,y)",
+        "xyy=Mul18(x,yy)",
+        "tmp=Mul18(y,3*S-xyy)",
+        "y=NativeTrunc1(tmp)"
+      ],
+      "final_p12": "(4095^2*S^3)<=(4096^2*xhat*yhat^2)<=(4097^2*S^3)",
+      "development_design_gate": "(4095^2*S^3)<(4096^2*xhat*yhat^2)<(4097^2*S^3)"
+    },
+    "scoring_state": "actual_y_not_normalized_q",
+    "design_reference_status": "clear_G9_reference;no_native_MPC_population_sampling",
+    "reference_operands": "diagnostic_only",
+    "arithmetic_identity_unchanged": true
+  },
+  "support": {
+    "folds": 5,
+    "complete_distinct_requests": 919,
+    "training_complement_distinct_requests": 100,
+    "training_complement_events": 40,
+    "held_out_fold_nonempty": true
+  },
+  "candidate_fit": {
+    "interval": "raw_minmax",
+    "reciprocal_upper": "ceil(17*H_raw_encoded/10)_once",
+    "reciprocal_lower": "L_raw",
+    "rsqrt_endpoints": "L_raw_and_H_raw_without_expansion",
+    "oof": "other_four_folds_fit_one_fold_exact_score",
+    "full_development_final_coefficients": "mandatory_before_route_and_K_selection",
+    "K_candidates": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "final_K_min": "minimum_of_actual_feasible_K_intersection",
+    "post_selection_refit_allowed": false,
+    "reciprocal_upper_cap_encoded": null,
+    "reciprocal_cap_policy": "uncapped_native_exp_profile;deterministic_D_le_n_proof_not_applicable",
+    "feasible_Ks": "intersection(fold0..4,full)_per_K_valid_and_strict_design_p12",
+    "duplicate_operand_policy": "do_not_collapse_distinct_stochastic_events",
+    "design_error_gate": "strict_p12_finite_residual;arithmetic_validity_unchanged",
+    "complete_all_fivefold_and_full_scores": true,
+    "diagnostic_p13_not_admission": true
+  },
+  "design_precision": {
+    "reciprocal": {
+      "bits": 12,
+      "inclusive": false
+    },
+    "rsqrt": {
+      "bits": 12,
+      "inclusive": false
+    }
+  },
+  "execution": {
+    "model_input_shape": "[1,128]",
+    "effective_length_public": true,
+    "maximum_effective_length": 128,
+    "padding_semantic_events": 0,
+    "PAD_excluded_from_fit_and_semantic_statistics": true,
+    "PAD_executes_native_SPU_and_enters_physical_validity_audit": false,
+    "semantic_batch_size": 1,
+    "queued_synchronization_may_batch_requests": true,
+    "queued_synchronization_changes_model_shape": false,
+    "execution_mode": "plaintext_numeric",
+    "reference_model": "G9_PLAINTEXT_NATIVE_MIXED_SEG3_EXP6_V2",
+    "cryptographic_execution": false,
+    "native_joint_randomness_equivalence_claim": false
+  },
+  "seed_lineage_aliases": {
+    "public-site-pad128": "JOINT_ROLE6_F18_COMP_G9_V2"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "os": "Ubuntu 22.04.5 LTS",
+  "architecture": "x86_64",
+  "python": "3.10.12",
+  "compiler": "GCC 11.4.0",
+  "bazel": "6.5.0",
+  "cmake": "3.22.1",
+  "ninja": "1.10.1",
+  "cuda_required": false,
+  "model_rank": 0,
+  "data_rank": 1,
+  "note": "Reference Linux CPU environment; Python and build dependencies are pinned separately."
+}

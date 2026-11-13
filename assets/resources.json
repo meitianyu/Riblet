@@ -1,0 +1,724 @@
+{
+  "schema": "riblet-resources-v1",
+  "resources": [
+    {
+      "bytes": 437942328,
+      "sha256": "8ac8c7734941c428e9270953dcd732186b9a88173149b66397d04dd33a0f24e6",
+      "members": [
+        {
+          "path": "config.json",
+          "bytes": 681,
+          "sha256": "fca16cd3c45e3aa90ed95a6a22dca7b164aacb5a624eb14d083ebb46c264919a"
+        },
+        {
+          "path": "flax_model.msgpack",
+          "bytes": 437942328,
+          "sha256": "8ac8c7734941c428e9270953dcd732186b9a88173149b66397d04dd33a0f24e6"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 711494,
+          "sha256": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 351,
+          "sha256": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+        }
+      ],
+      "unpacked_bytes": 438654854,
+      "resource_id": "model-bert-cola",
+      "version": "v1",
+      "filename": "model-bert-cola-v1.msgpack",
+      "urls": [
+        "https://huggingface.co/ethanMei/Riblet-artifacts/resolve/6b4b6655b7cf40dc7b7ab1b044daac4c7a1284e3/v0.1.0/model-bert-cola-v1.msgpack"
+      ],
+      "roles": [
+        "model"
+      ],
+      "routes": [
+        "frozen",
+        "construct"
+      ],
+      "models": [
+        "bert-cola"
+      ],
+      "dependencies": [],
+      "acquisition": "pinned_huggingface_or_verified_local_file",
+      "bundled": {
+        "config.json": "reproduction/model-bert-cola/config.json",
+        "tokenizer.json": "reproduction/preprocess-bert/tokenizer.json",
+        "tokenizer_config.json": "reproduction/preprocess-bert/tokenizer_config.json"
+      },
+      "format": "file",
+      "source": "huggingface"
+    },
+    {
+      "bytes": 437942328,
+      "sha256": "2bb8e4febf8fb07a5b2e019636109eebaab067f265aa878c7b38b392f1db6c6a",
+      "members": [
+        {
+          "path": "config.json",
+          "bytes": 681,
+          "sha256": "fca16cd3c45e3aa90ed95a6a22dca7b164aacb5a624eb14d083ebb46c264919a"
+        },
+        {
+          "path": "flax_model.msgpack",
+          "bytes": 437942328,
+          "sha256": "2bb8e4febf8fb07a5b2e019636109eebaab067f265aa878c7b38b392f1db6c6a"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 711494,
+          "sha256": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 351,
+          "sha256": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+        }
+      ],
+      "unpacked_bytes": 438654854,
+      "resource_id": "model-bert-sst2",
+      "version": "v1",
+      "filename": "model-bert-sst2-v1.msgpack",
+      "urls": [
+        "https://huggingface.co/ethanMei/Riblet-artifacts/resolve/6b4b6655b7cf40dc7b7ab1b044daac4c7a1284e3/v0.1.0/model-bert-sst2-v1.msgpack"
+      ],
+      "roles": [
+        "model"
+      ],
+      "routes": [
+        "frozen",
+        "construct"
+      ],
+      "models": [
+        "bert-sst2"
+      ],
+      "dependencies": [],
+      "acquisition": "pinned_huggingface_or_verified_local_file",
+      "bundled": {
+        "config.json": "reproduction/model-bert-cola/config.json",
+        "tokenizer.json": "reproduction/preprocess-bert/tokenizer.json",
+        "tokenizer_config.json": "reproduction/preprocess-bert/tokenizer_config.json"
+      },
+      "format": "file",
+      "source": "huggingface"
+    },
+    {
+      "bytes": 437942328,
+      "sha256": "70c3f58706cde6ecd68b1d37b7f40be4ae1e89c25d9576fd5ad2e12659c250bd",
+      "members": [
+        {
+          "path": "config.json",
+          "bytes": 681,
+          "sha256": "fca16cd3c45e3aa90ed95a6a22dca7b164aacb5a624eb14d083ebb46c264919a"
+        },
+        {
+          "path": "flax_model.msgpack",
+          "bytes": 437942328,
+          "sha256": "70c3f58706cde6ecd68b1d37b7f40be4ae1e89c25d9576fd5ad2e12659c250bd"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 711494,
+          "sha256": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 351,
+          "sha256": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+        }
+      ],
+      "unpacked_bytes": 438654854,
+      "resource_id": "model-bert-mrpc",
+      "version": "v1",
+      "filename": "model-bert-mrpc-v1.msgpack",
+      "urls": [
+        "https://huggingface.co/ethanMei/Riblet-artifacts/resolve/6b4b6655b7cf40dc7b7ab1b044daac4c7a1284e3/v0.1.0/model-bert-mrpc-v1.msgpack"
+      ],
+      "roles": [
+        "model"
+      ],
+      "routes": [
+        "frozen",
+        "construct"
+      ],
+      "models": [
+        "bert-mrpc"
+      ],
+      "dependencies": [],
+      "acquisition": "pinned_huggingface_or_verified_local_file",
+      "bundled": {
+        "config.json": "reproduction/model-bert-cola/config.json",
+        "tokenizer.json": "reproduction/preprocess-bert/tokenizer.json",
+        "tokenizer_config.json": "reproduction/preprocess-bert/tokenizer_config.json"
+      },
+      "format": "file",
+      "source": "huggingface"
+    },
+    {
+      "bytes": 437939252,
+      "sha256": "5aa0a157c63efac268762e6fb77e77c82ddb9d4241324c078919690e4555a994",
+      "members": [
+        {
+          "path": "config.json",
+          "bytes": 742,
+          "sha256": "a83eb5ee7b216103be4024e28b82d24f96643a3022ba287ce612d188857d85d7"
+        },
+        {
+          "path": "flax_model.msgpack",
+          "bytes": 437939252,
+          "sha256": "5aa0a157c63efac268762e6fb77e77c82ddb9d4241324c078919690e4555a994"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 711494,
+          "sha256": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 351,
+          "sha256": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+        }
+      ],
+      "unpacked_bytes": 438651839,
+      "resource_id": "model-bert-stsb",
+      "version": "v1",
+      "filename": "model-bert-stsb-v1.msgpack",
+      "urls": [
+        "https://huggingface.co/ethanMei/Riblet-artifacts/resolve/6b4b6655b7cf40dc7b7ab1b044daac4c7a1284e3/v0.1.0/model-bert-stsb-v1.msgpack"
+      ],
+      "roles": [
+        "model"
+      ],
+      "routes": [
+        "frozen",
+        "construct"
+      ],
+      "models": [
+        "bert-stsb"
+      ],
+      "dependencies": [],
+      "acquisition": "pinned_huggingface_or_verified_local_file",
+      "bundled": {
+        "config.json": "reproduction/model-bert-stsb/config.json",
+        "tokenizer.json": "reproduction/preprocess-bert/tokenizer.json",
+        "tokenizer_config.json": "reproduction/preprocess-bert/tokenizer_config.json"
+      },
+      "format": "file",
+      "source": "huggingface"
+    },
+    {
+      "bytes": 437942328,
+      "sha256": "d3179383bc6a32b69b8347b719142162cd7089410553601fd6a1b577a36b94c9",
+      "members": [
+        {
+          "path": "config.json",
+          "bytes": 681,
+          "sha256": "fca16cd3c45e3aa90ed95a6a22dca7b164aacb5a624eb14d083ebb46c264919a"
+        },
+        {
+          "path": "flax_model.msgpack",
+          "bytes": 437942328,
+          "sha256": "d3179383bc6a32b69b8347b719142162cd7089410553601fd6a1b577a36b94c9"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 711494,
+          "sha256": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 351,
+          "sha256": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+        }
+      ],
+      "unpacked_bytes": 438654854,
+      "resource_id": "model-bert-qqp",
+      "version": "v1",
+      "filename": "model-bert-qqp-v1.msgpack",
+      "urls": [
+        "https://huggingface.co/ethanMei/Riblet-artifacts/resolve/6b4b6655b7cf40dc7b7ab1b044daac4c7a1284e3/v0.1.0/model-bert-qqp-v1.msgpack"
+      ],
+      "roles": [
+        "model"
+      ],
+      "routes": [
+        "frozen",
+        "construct"
+      ],
+      "models": [
+        "bert-qqp"
+      ],
+      "dependencies": [],
+      "acquisition": "pinned_huggingface_or_verified_local_file",
+      "bundled": {
+        "config.json": "reproduction/model-bert-cola/config.json",
+        "tokenizer.json": "reproduction/preprocess-bert/tokenizer.json",
+        "tokenizer_config.json": "reproduction/preprocess-bert/tokenizer_config.json"
+      },
+      "format": "file",
+      "source": "huggingface"
+    },
+    {
+      "bytes": 437945404,
+      "sha256": "e65fd1bca1b8e4b628c626b41ef2a7304799d10dee12a419667bbb330bed03f0",
+      "members": [
+        {
+          "path": "config.json",
+          "bytes": 835,
+          "sha256": "398d33b9ae523981d992bdf37dba02db33d910b9a8f58971a1562c9357e691d1"
+        },
+        {
+          "path": "flax_model.msgpack",
+          "bytes": 437945404,
+          "sha256": "e65fd1bca1b8e4b628c626b41ef2a7304799d10dee12a419667bbb330bed03f0"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 711494,
+          "sha256": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 351,
+          "sha256": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+        }
+      ],
+      "unpacked_bytes": 438658084,
+      "resource_id": "model-bert-mnli",
+      "version": "v1",
+      "filename": "model-bert-mnli-v1.msgpack",
+      "urls": [
+        "https://huggingface.co/ethanMei/Riblet-artifacts/resolve/6b4b6655b7cf40dc7b7ab1b044daac4c7a1284e3/v0.1.0/model-bert-mnli-v1.msgpack"
+      ],
+      "roles": [
+        "model"
+      ],
+      "routes": [
+        "frozen",
+        "construct"
+      ],
+      "models": [
+        "bert-mnli"
+      ],
+      "dependencies": [],
+      "acquisition": "pinned_huggingface_or_verified_local_file",
+      "bundled": {
+        "config.json": "reproduction/model-bert-mnli/config.json",
+        "tokenizer.json": "reproduction/preprocess-bert/tokenizer.json",
+        "tokenizer_config.json": "reproduction/preprocess-bert/tokenizer_config.json"
+      },
+      "format": "file",
+      "source": "huggingface"
+    },
+    {
+      "bytes": 437942328,
+      "sha256": "17e4e763e7aea8871b351e7fc80dd92e20f8b36b8fa887a6da77dd5857e2b6fd",
+      "members": [
+        {
+          "path": "config.json",
+          "bytes": 681,
+          "sha256": "fca16cd3c45e3aa90ed95a6a22dca7b164aacb5a624eb14d083ebb46c264919a"
+        },
+        {
+          "path": "flax_model.msgpack",
+          "bytes": 437942328,
+          "sha256": "17e4e763e7aea8871b351e7fc80dd92e20f8b36b8fa887a6da77dd5857e2b6fd"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 711494,
+          "sha256": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 351,
+          "sha256": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+        }
+      ],
+      "unpacked_bytes": 438654854,
+      "resource_id": "model-bert-qnli",
+      "version": "v1",
+      "filename": "model-bert-qnli-v1.msgpack",
+      "urls": [
+        "https://huggingface.co/ethanMei/Riblet-artifacts/resolve/6b4b6655b7cf40dc7b7ab1b044daac4c7a1284e3/v0.1.0/model-bert-qnli-v1.msgpack"
+      ],
+      "roles": [
+        "model"
+      ],
+      "routes": [
+        "frozen",
+        "construct"
+      ],
+      "models": [
+        "bert-qnli"
+      ],
+      "dependencies": [],
+      "acquisition": "pinned_huggingface_or_verified_local_file",
+      "bundled": {
+        "config.json": "reproduction/model-bert-cola/config.json",
+        "tokenizer.json": "reproduction/preprocess-bert/tokenizer.json",
+        "tokenizer_config.json": "reproduction/preprocess-bert/tokenizer_config.json"
+      },
+      "format": "file",
+      "source": "huggingface"
+    },
+    {
+      "bytes": 437942328,
+      "sha256": "3c8653a0b9ee7eb8d0b3a54dd6c06dade4a25bc8f141e65b1170975ddedfd727",
+      "members": [
+        {
+          "path": "config.json",
+          "bytes": 681,
+          "sha256": "fca16cd3c45e3aa90ed95a6a22dca7b164aacb5a624eb14d083ebb46c264919a"
+        },
+        {
+          "path": "flax_model.msgpack",
+          "bytes": 437942328,
+          "sha256": "3c8653a0b9ee7eb8d0b3a54dd6c06dade4a25bc8f141e65b1170975ddedfd727"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 711494,
+          "sha256": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 351,
+          "sha256": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+        }
+      ],
+      "unpacked_bytes": 438654854,
+      "resource_id": "model-bert-rte",
+      "version": "v1",
+      "filename": "model-bert-rte-v1.msgpack",
+      "urls": [
+        "https://huggingface.co/ethanMei/Riblet-artifacts/resolve/6b4b6655b7cf40dc7b7ab1b044daac4c7a1284e3/v0.1.0/model-bert-rte-v1.msgpack"
+      ],
+      "roles": [
+        "model"
+      ],
+      "routes": [
+        "frozen",
+        "construct"
+      ],
+      "models": [
+        "bert-rte"
+      ],
+      "dependencies": [],
+      "acquisition": "pinned_huggingface_or_verified_local_file",
+      "bundled": {
+        "config.json": "reproduction/model-bert-cola/config.json",
+        "tokenizer.json": "reproduction/preprocess-bert/tokenizer.json",
+        "tokenizer_config.json": "reproduction/preprocess-bert/tokenizer_config.json"
+      },
+      "format": "file",
+      "source": "huggingface"
+    },
+    {
+      "bytes": 346277993,
+      "sha256": "e0c809a1fe1d79c51c4da8a9ebd6c0923bac317ca469a33c6620977054149471",
+      "members": [
+        {
+          "path": "config.json",
+          "bytes": 69665,
+          "sha256": "abdf73cc4ce79495a83f32a8c9265daa7a1363f5a3efa4704c88a6e7f45ad19d"
+        },
+        {
+          "path": "flax_model.msgpack",
+          "bytes": 346277993,
+          "sha256": "e0c809a1fe1d79c51c4da8a9ebd6c0923bac317ca469a33c6620977054149471"
+        },
+        {
+          "path": "preprocessor_config.json",
+          "bytes": 160,
+          "sha256": "90d1ae427c27d2b9dcb01f6a62ba96aa67aac2de1697c59cd212055b5035c4a2"
+        }
+      ],
+      "unpacked_bytes": 346347818,
+      "resource_id": "model-vit",
+      "version": "v1",
+      "filename": "model-vit-v1.msgpack",
+      "urls": [
+        "https://huggingface.co/google/vit-base-patch16-224/resolve/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/flax_model.msgpack"
+      ],
+      "roles": [
+        "model"
+      ],
+      "routes": [
+        "frozen",
+        "construct"
+      ],
+      "models": [
+        "vit-base-patch16-224"
+      ],
+      "dependencies": [],
+      "acquisition": "official_revision_or_verified_local_file",
+      "bundled": {
+        "config.json": "reproduction/model-vit/config.json",
+        "preprocessor_config.json": "reproduction/preprocess-vit/preprocessor_config.json"
+      },
+      "format": "file",
+      "source": "official"
+    },
+    {
+      "bytes": 696320,
+      "sha256": "38a87745e00bcdcd9e00915666356b072a1d0506129ce58c465fad8e2b88c63b",
+      "members": [
+        {
+          "path": "pad128/public-schedule.json",
+          "bytes": 129561,
+          "sha256": "cd89279277f3c2623a63f82629e4c05f5936de3cee3e95c67c6be549de773ca1"
+        },
+        {
+          "path": "pad128/private-sites.json",
+          "bytes": 561704,
+          "sha256": "40ebcdf5eb3ee601c1f475f1993dd3063236b9910e19a57330fbd11568096013"
+        }
+      ],
+      "unpacked_bytes": 691265,
+      "resource_id": "parameters-bert",
+      "version": "v2",
+      "filename": "parameters-bert-v2.tar",
+      "urls": [
+        "https://huggingface.co/ethanMei/Riblet-artifacts/resolve/aead7176f92b592a2d6ac631302cf258be23a988/public-site-v1/parameters-bert-v2.tar"
+      ],
+      "roles": [
+        "model"
+      ],
+      "routes": [
+        "frozen"
+      ],
+      "models": [
+        "bert-cola",
+        "bert-sst2",
+        "bert-mrpc",
+        "bert-stsb",
+        "bert-qqp",
+        "bert-mnli",
+        "bert-qnli",
+        "bert-rte"
+      ],
+      "dependencies": [],
+      "acquisition": "pinned_huggingface_or_verified_local_file",
+      "bundled": {},
+      "format": "tar",
+      "source": "huggingface"
+    },
+    {
+      "bytes": 16558080,
+      "sha256": "4e4a42cd6f05bdd5245d5f90c7deee33b13cdc89e2325b6207053761720d22dd",
+      "members": [
+        {
+          "path": "audit.json",
+          "bytes": 1093,
+          "sha256": "2d80ba9096885a9cd7133162d80a5f3a963769de5b0a2038f3670412a5d34cfa"
+        },
+        {
+          "path": "coefficients-encoded-private.npy",
+          "bytes": 87072,
+          "sha256": "c40b4d95c1c7de3f701032bedb5da138292d81f23e1a970fb72457c23c2b6b5a"
+        },
+        {
+          "path": "joint-private.json",
+          "bytes": 16252483,
+          "sha256": "2d7b04c7f72fc2e5ee891226e6330ae07185852f0461ef9ae88fc2de8db2c3d2"
+        },
+        {
+          "path": "public-deployment-metadata.json",
+          "bytes": 205636,
+          "sha256": "b52dbfdea38760cef7bcda2298127856701c972571b784dda6854a2dc9303bef"
+        }
+      ],
+      "unpacked_bytes": 16546284,
+      "resource_id": "parameters-vit",
+      "version": "v1",
+      "filename": "parameters-vit-v1.tar",
+      "urls": [
+        "https://huggingface.co/ethanMei/Riblet-artifacts/resolve/6b4b6655b7cf40dc7b7ab1b044daac4c7a1284e3/v0.1.0/parameters-vit-v1.tar"
+      ],
+      "roles": [
+        "model"
+      ],
+      "routes": [
+        "frozen"
+      ],
+      "models": [
+        "vit-base-patch16-224"
+      ],
+      "dependencies": [],
+      "acquisition": "pinned_huggingface_or_verified_local_file",
+      "bundled": {},
+      "format": "tar",
+      "source": "huggingface"
+    },
+    {
+      "bytes": 711845,
+      "sha256": "9614c2038ea0917da20d8a0b81a9a4d986fde936518a05266e11aa8e04b36f9e",
+      "members": [
+        {
+          "path": "tokenizer.json",
+          "bytes": 711494,
+          "sha256": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 351,
+          "sha256": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+        }
+      ],
+      "unpacked_bytes": 711845,
+      "resource_id": "preprocess-bert",
+      "version": "v1",
+      "urls": [],
+      "roles": [
+        "model",
+        "data"
+      ],
+      "routes": [
+        "frozen",
+        "construct"
+      ],
+      "models": [
+        "bert-cola",
+        "bert-sst2",
+        "bert-mrpc",
+        "bert-stsb",
+        "bert-qqp",
+        "bert-mnli",
+        "bert-qnli",
+        "bert-rte"
+      ],
+      "dependencies": [],
+      "acquisition": "included_in_source",
+      "bundled": {
+        "tokenizer.json": "reproduction/preprocess-bert/tokenizer.json",
+        "tokenizer_config.json": "reproduction/preprocess-bert/tokenizer_config.json"
+      },
+      "format": "bundled",
+      "source": "repository",
+      "digest_basis": "canonical-member-list"
+    },
+    {
+      "bytes": 160,
+      "sha256": "fdd96b1ae821c5effc13329d357bf8f73201f947ed32a706244c669068b85b8c",
+      "members": [
+        {
+          "path": "preprocessor_config.json",
+          "bytes": 160,
+          "sha256": "90d1ae427c27d2b9dcb01f6a62ba96aa67aac2de1697c59cd212055b5035c4a2"
+        }
+      ],
+      "unpacked_bytes": 160,
+      "resource_id": "preprocess-vit",
+      "version": "v1",
+      "urls": [],
+      "roles": [
+        "model",
+        "data"
+      ],
+      "routes": [
+        "frozen",
+        "construct"
+      ],
+      "models": [
+        "vit-base-patch16-224"
+      ],
+      "dependencies": [],
+      "acquisition": "included_in_source",
+      "bundled": {
+        "preprocessor_config.json": "reproduction/preprocess-vit/preprocessor_config.json"
+      },
+      "format": "bundled",
+      "source": "repository",
+      "digest_basis": "canonical-member-list"
+    },
+    {
+      "bytes": 18971584,
+      "sha256": "eaa00d3ac0382b3289c13dcadaffb56f9fe3a0c7797bd380a8d0999f06ca4dc8",
+      "members": [
+        {
+          "path": "bert-development-membership.json",
+          "bytes": 18971584,
+          "sha256": "3d6d58fca85357225f7cdcf4b7f42c657c934a5a52f5b8bd763a485ff730cc7a"
+        }
+      ],
+      "unpacked_bytes": 18971584,
+      "resource_id": "construction-bert",
+      "version": "v2",
+      "urls": [],
+      "roles": [
+        "model"
+      ],
+      "routes": [
+        "construct"
+      ],
+      "models": [
+        "bert-cola",
+        "bert-sst2",
+        "bert-mrpc",
+        "bert-stsb",
+        "bert-qqp",
+        "bert-mnli",
+        "bert-qnli",
+        "bert-rte"
+      ],
+      "dependencies": [
+        "model-bert-cola",
+        "model-bert-sst2",
+        "model-bert-mrpc",
+        "model-bert-stsb",
+        "model-bert-qqp",
+        "model-bert-mnli",
+        "model-bert-qnli",
+        "model-bert-rte",
+        "preprocess-bert"
+      ],
+      "acquisition": "included_in_source",
+      "bundled": {
+        "bert-development-membership.json": "reproduction/construction-bert/bert-development-membership.json"
+      },
+      "format": "bundled",
+      "source": "repository",
+      "digest_basis": "canonical-member-list"
+    },
+    {
+      "bytes": 3940320,
+      "sha256": "0ad7c97a0a701915e9ec00d75d5d4e7d746edce2c4d953918ff36fadb9d5ed19",
+      "members": [
+        {
+          "path": "manifest.json",
+          "bytes": 3940320,
+          "sha256": "41057249a727710fc7a61629b7638c25ae712c75bb4672a4b75100b29c9284d1"
+        }
+      ],
+      "unpacked_bytes": 3940320,
+      "resource_id": "construction-vit",
+      "version": "v2",
+      "urls": [],
+      "roles": [
+        "model"
+      ],
+      "routes": [
+        "construct"
+      ],
+      "models": [
+        "vit-base-patch16-224"
+      ],
+      "dependencies": [
+        "model-vit",
+        "preprocess-vit"
+      ],
+      "acquisition": "included_in_source",
+      "projection": "removed original source filesystem path/mtime only; exact rows/folds/hashes preserved",
+      "bundled": {
+        "manifest.json": "reproduction/construction-vit/manifest.json"
+      },
+      "format": "bundled",
+      "source": "repository",
+      "digest_basis": "canonical-member-list"
+    }
+  ]
+}

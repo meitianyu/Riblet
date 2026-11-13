@@ -1,0 +1,510 @@
+{
+  "schema": 1,
+  "source": "paper",
+  "datasets": {
+    "glue": {
+      "repo_id": "nyu-mll/glue",
+      "revision": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+      "files": [
+        {
+          "path": "ax/test-00000-of-00001.parquet",
+          "bytes": 80767,
+          "sha256": "a07b802fe2d4968a1f7ccce9406826dc77e0d1dc53fea9491664bd8ebba8571a"
+        },
+        {
+          "path": "cola/test-00000-of-00001.parquet",
+          "bytes": 37719,
+          "sha256": "3c4d526b6f49f432621de43569f9ecf6af41f639baaf4a9d821b95d745def61d"
+        },
+        {
+          "path": "cola/train-00000-of-00001.parquet",
+          "bytes": 251124,
+          "sha256": "2e7538afa2000e63f5343f16a758d75c452661a384208399d2035cd2fce45c33"
+        },
+        {
+          "path": "cola/validation-00000-of-00001.parquet",
+          "bytes": 37551,
+          "sha256": "c14b7219a7d9f9fe3dd291fd000f6623ee413805eb108c9c49578ed50873e4ba"
+        },
+        {
+          "path": "mnli/test_matched-00000-of-00001.parquet",
+          "bytes": 1220119,
+          "sha256": "a330c4f2aeb0bc92f1b4b133fbbaf51bf9c7d0f5cac3d06f49ef63af47dbb822"
+        },
+        {
+          "path": "mnli/test_mismatched-00000-of-00001.parquet",
+          "bytes": 1257857,
+          "sha256": "e5078398d5c83d183578b1bdafe94e4491ed28ad1cf8d98ee8846afcec651f16"
+        },
+        {
+          "path": "mnli/train-00000-of-00001.parquet",
+          "bytes": 52224361,
+          "sha256": "49a4a5508b89b8fed2c6e81d2c47d00f4759050a7048c6cc5d95d31122ced3c1"
+        },
+        {
+          "path": "mnli/validation_matched-00000-of-00001.parquet",
+          "bytes": 1214936,
+          "sha256": "7f918c09d9c35446b8e8f06a5672f8ab704e2897fecbf52e2e154141f3d7c421"
+        },
+        {
+          "path": "mnli/validation_mismatched-00000-of-00001.parquet",
+          "bytes": 1251152,
+          "sha256": "04aba92823a954be36fe1b69b61eed334c9eb1009daba0dd79f69d77b87c535c"
+        },
+        {
+          "path": "mnli_matched/test-00000-of-00001.parquet",
+          "bytes": 1220119,
+          "sha256": "a330c4f2aeb0bc92f1b4b133fbbaf51bf9c7d0f5cac3d06f49ef63af47dbb822"
+        },
+        {
+          "path": "mnli_matched/validation-00000-of-00001.parquet",
+          "bytes": 1214936,
+          "sha256": "7f918c09d9c35446b8e8f06a5672f8ab704e2897fecbf52e2e154141f3d7c421"
+        },
+        {
+          "path": "mnli_mismatched/test-00000-of-00001.parquet",
+          "bytes": 1257857,
+          "sha256": "e5078398d5c83d183578b1bdafe94e4491ed28ad1cf8d98ee8846afcec651f16"
+        },
+        {
+          "path": "mnli_mismatched/validation-00000-of-00001.parquet",
+          "bytes": 1251152,
+          "sha256": "04aba92823a954be36fe1b69b61eed334c9eb1009daba0dd79f69d77b87c535c"
+        },
+        {
+          "path": "mrpc/test-00000-of-00001.parquet",
+          "bytes": 308441,
+          "sha256": "a623ed1cbdf445b11f8e249acbf649d7d3a5ee58c918554c40cbd8307e488693"
+        },
+        {
+          "path": "mrpc/train-00000-of-00001.parquet",
+          "bytes": 649281,
+          "sha256": "61fd41301e0e244b0420c4350a170c8e7cf64740335fc875a4af2d79af0df0af"
+        },
+        {
+          "path": "mrpc/validation-00000-of-00001.parquet",
+          "bytes": 75678,
+          "sha256": "33c007dbf5bfa8463d87a13e6226df8c0fcf2596c2cd39d0f3bb79754e00f50f"
+        },
+        {
+          "path": "qnli/test-00000-of-00001.parquet",
+          "bytes": 877345,
+          "sha256": "f39520cd07925c9784e4a7f1f7aed8f17f136039b8498f7ad07c7bf13d65ba83"
+        },
+        {
+          "path": "qnli/train-00000-of-00001.parquet",
+          "bytes": 17528917,
+          "sha256": "ebc7cb70a5bbde0b0336c3d51f31bb4df4673e908e8874b090b52169b1365c6c"
+        },
+        {
+          "path": "qnli/validation-00000-of-00001.parquet",
+          "bytes": 872062,
+          "sha256": "e69311b81dc65589286091d9905a27617a90436dd215c7a59832fa8f4f336169"
+        },
+        {
+          "path": "qqp/test-00000-of-00001.parquet",
+          "bytes": 36694152,
+          "sha256": "95d5d1efcfa3ff7e090565e98085770b3497aad8dbcf12996412b23d2fb669e8"
+        },
+        {
+          "path": "qqp/train-00000-of-00001.parquet",
+          "bytes": 33558839,
+          "sha256": "4d6f02e643f7c36e9a4f7d4971a5ee9bd74063a319452fe6c87850c739774cd7"
+        },
+        {
+          "path": "qqp/validation-00000-of-00001.parquet",
+          "bytes": 3729274,
+          "sha256": "efd86a539c412d74874ee451573d7bd142f56c47fe36de033b9f367d8bb0fa71"
+        },
+        {
+          "path": "rte/test-00000-of-00001.parquet",
+          "bytes": 621413,
+          "sha256": "3f44aadbfb8bbb7a64ba0674bd26ff77b66e88fdf7a6d64255a5ba6ae9057383"
+        },
+        {
+          "path": "rte/train-00000-of-00001.parquet",
+          "bytes": 583976,
+          "sha256": "a6252ab17015d718f6de1effe0980f7b158df63e3d16207cd8bd396b608e5147"
+        },
+        {
+          "path": "rte/validation-00000-of-00001.parquet",
+          "bytes": 69020,
+          "sha256": "fb2aa2e04f551133ba663617a15ae133dc22b0f6a969bc0629b5ea6003ee9cf8"
+        },
+        {
+          "path": "sst2/test-00000-of-00001.parquet",
+          "bytes": 147793,
+          "sha256": "e9d23cf0067211d2baf018328b507f5153fb6704d75117295a8bda47c7adccb1"
+        },
+        {
+          "path": "sst2/train-00000-of-00001.parquet",
+          "bytes": 3110468,
+          "sha256": "66a253e67968acfabcbe49dbe9da964b42ac1c851c40ab760e8c8942efdb3229"
+        },
+        {
+          "path": "sst2/validation-00000-of-00001.parquet",
+          "bytes": 72819,
+          "sha256": "a1371f3b3a7b0bcefa8388799a9359dc3ce76c349cc0079507a7991364fd2a9b"
+        },
+        {
+          "path": "stsb/test-00000-of-00001.parquet",
+          "bytes": 114296,
+          "sha256": "04fa2561f1ff3c395cf8980e3eed5d133c194abf636d5e1870d765c861087bd9"
+        },
+        {
+          "path": "stsb/train-00000-of-00001.parquet",
+          "bytes": 502065,
+          "sha256": "bbd93bbb988fd18437e02185fe3b2bd9a18350376c392e7820de9df1b247ed1f"
+        },
+        {
+          "path": "stsb/validation-00000-of-00001.parquet",
+          "bytes": 150622,
+          "sha256": "152de7cf1fa34ee4df1c243bd209b02ade21a1d5c4fb3b7da5240f78e4000aa9"
+        },
+        {
+          "path": "wnli/test-00000-of-00001.parquet",
+          "bytes": 13620,
+          "sha256": "766d3754c46a80f3275cb81a32ee6b7b49176fa8c1ef85ea92a4a3676510b902"
+        },
+        {
+          "path": "wnli/train-00000-of-00001.parquet",
+          "bytes": 38835,
+          "sha256": "40f4c0c60db68addeda8e9cbe25e6344cd99d5bbb80125535994a9a3141ee0a9"
+        },
+        {
+          "path": "wnli/validation-00000-of-00001.parquet",
+          "bytes": 11067,
+          "sha256": "880037e45e03df868d5799ca21dc03f3a6378f0adf3c01c7bfc46b94fa61f1cb"
+        }
+      ]
+    },
+    "imagenet": {
+      "homepage": "https://www.image-net.org/challenges/LSVRC/2012/2012-downloads.php",
+      "version": "ILSVRC2012",
+      "files": [
+        {
+          "path": "ILSVRC2012_img_train.tar",
+          "md5": "1d675b47d978889d74fa0da5fadfb00e"
+        },
+        {
+          "path": "ILSVRC2012_img_val.tar",
+          "md5": "29b22e2961454d5413ddabcf34fc5622"
+        },
+        {
+          "path": "ILSVRC2012_img_test.tar",
+          "md5": "e1b8681fff3d63731c599df9b4b6fc02"
+        },
+        {
+          "path": "ILSVRC2012_devkit_t12.tar.gz",
+          "md5": "fa75699e90414af021442c21a62c3abf"
+        }
+      ]
+    }
+  },
+  "requests": [
+    {
+      "content_id": "samples-eval-v2-cola-01",
+      "model": "bert-cola",
+      "task": "cola",
+      "split": "validation",
+      "source_id": "571",
+      "original_row_index_zero_based": 571,
+      "effective_length": 23,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "6c41811eda3b0602d5809ae7f5f0c626b195e62d702fe9e2d232fbe1d37ea497"
+    },
+    {
+      "content_id": "samples-eval-v2-cola-02",
+      "model": "bert-cola",
+      "task": "cola",
+      "split": "validation",
+      "source_id": "43",
+      "original_row_index_zero_based": 43,
+      "effective_length": 6,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "6622d39aa8a19c58cf7941afa574a4df7c172dd4d3ada42f2f8c1933cbe302cf"
+    },
+    {
+      "content_id": "samples-eval-v2-imagenet1k-01",
+      "model": "vit-base-patch16-224",
+      "task": "imagenet1k",
+      "split": "validation",
+      "source_id": "ILSVRC2012_val_00030431.JPEG",
+      "layout": "vit-standard",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "processor_id": "google-vit-base-patch16-224-processor-3f49326-v1",
+      "tensor_sha256": "2cc96fb34d27b82888ce6c6aab6a8743e43a2671116178d4e663ff3247d59cab"
+    },
+    {
+      "content_id": "samples-eval-v2-imagenet1k-02",
+      "model": "vit-base-patch16-224",
+      "task": "imagenet1k",
+      "split": "validation",
+      "source_id": "ILSVRC2012_val_00015321.JPEG",
+      "layout": "vit-standard",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "processor_id": "google-vit-base-patch16-224-processor-3f49326-v1",
+      "tensor_sha256": "72580e33c46d7da3d51a3f3c22970fe1ec28066d5470c85b23108eb3b66af499"
+    },
+    {
+      "content_id": "samples-eval-v2-mnli-01",
+      "model": "bert-mnli",
+      "task": "mnli",
+      "split": "validation_matched",
+      "source_id": "3505",
+      "original_row_index_zero_based": 3505,
+      "effective_length": 55,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "90ea3b50d3f929e672588322e6d9dfaf8d9baf468dda0fc25a398814f14f81d3"
+    },
+    {
+      "content_id": "samples-eval-v2-mnli-02",
+      "model": "bert-mnli",
+      "task": "mnli",
+      "split": "validation_matched",
+      "source_id": "7465",
+      "original_row_index_zero_based": 7465,
+      "effective_length": 29,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "bdba759bc120de804ff6b8a798135760b01aab2213869f946a15c15c8796813f"
+    },
+    {
+      "content_id": "samples-eval-v2-mrpc-01",
+      "model": "bert-mrpc",
+      "task": "mrpc",
+      "split": "validation",
+      "source_id": "2472",
+      "original_row_index_zero_based": 252,
+      "effective_length": 65,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "2d94f8264548fc7bf8634145bf70407e4dc6fbff6b2faa5fc7b696dd6ee48556"
+    },
+    {
+      "content_id": "samples-eval-v2-mrpc-02",
+      "model": "bert-mrpc",
+      "task": "mrpc",
+      "split": "validation",
+      "source_id": "1923",
+      "original_row_index_zero_based": 193,
+      "effective_length": 62,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "3d96baa9805671faee823e51fc69b583feec31d556dfd990facb2a09b4599ce7"
+    },
+    {
+      "content_id": "samples-eval-v2-qnli-01",
+      "model": "bert-qnli",
+      "task": "qnli",
+      "split": "validation",
+      "source_id": "199",
+      "original_row_index_zero_based": 199,
+      "effective_length": 61,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "21ed9adaf11952c1236d3196c2fe450ca356f04c02432b487652f65a04bec6bf"
+    },
+    {
+      "content_id": "samples-eval-v2-qnli-02",
+      "model": "bert-qnli",
+      "task": "qnli",
+      "split": "validation",
+      "source_id": "1080",
+      "original_row_index_zero_based": 1080,
+      "effective_length": 31,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "d62b820858af74ba5e5e10a9693ba7ecadb7ae8366ea83a5efaa9089c45e1b41"
+    },
+    {
+      "content_id": "samples-eval-v2-qqp-01",
+      "model": "bert-qqp",
+      "task": "qqp",
+      "split": "validation",
+      "source_id": "26787",
+      "original_row_index_zero_based": 26787,
+      "effective_length": 31,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "328f6b2f9073bc0a0eeff828e745d60c1b19ff7df95bde6f7d1ea5e4b57b03c6"
+    },
+    {
+      "content_id": "samples-eval-v2-qqp-02",
+      "model": "bert-qqp",
+      "task": "qqp",
+      "split": "validation",
+      "source_id": "24345",
+      "original_row_index_zero_based": 24345,
+      "effective_length": 30,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "3a84099f3ce6eafb8aaec7186a7409aaf38b9e8b80c24824542cdb0a3ba74fdf"
+    },
+    {
+      "content_id": "samples-eval-v2-rte-01",
+      "model": "bert-rte",
+      "task": "rte",
+      "split": "validation",
+      "source_id": "197",
+      "original_row_index_zero_based": 197,
+      "effective_length": 20,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "6934d7b56c15d6443a781eb07372e4f059b5a6a5e6575145f77d23a672039884"
+    },
+    {
+      "content_id": "samples-eval-v2-rte-02",
+      "model": "bert-rte",
+      "task": "rte",
+      "split": "validation",
+      "source_id": "180",
+      "original_row_index_zero_based": 180,
+      "effective_length": 58,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "0af9fb875f73f38fb508d11fb28b30536ee5747e53710077392d984538c1db3b"
+    },
+    {
+      "content_id": "samples-eval-v2-sst2-01",
+      "model": "bert-sst2",
+      "task": "sst2",
+      "split": "validation",
+      "source_id": "563",
+      "original_row_index_zero_based": 563,
+      "effective_length": 22,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "7dfb6f875fdeb164933a7d9219eca3b370ce7acab5062bad857487da377d53c4"
+    },
+    {
+      "content_id": "samples-eval-v2-sst2-02",
+      "model": "bert-sst2",
+      "task": "sst2",
+      "split": "validation",
+      "source_id": "52",
+      "original_row_index_zero_based": 52,
+      "effective_length": 22,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "fd483abb657acea2aa0afb9cd54d8c5ac925ce1ad35a2a3e31d29b41c47bf0e8"
+    },
+    {
+      "content_id": "samples-eval-v2-stsb-01",
+      "model": "bert-stsb",
+      "task": "stsb",
+      "split": "validation",
+      "source_id": "1477",
+      "original_row_index_zero_based": 1477,
+      "effective_length": 29,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "1945b1560fae9c0a515cd66f126da786ed0b1e93791b3a8a3ddbecfb95421854"
+    },
+    {
+      "content_id": "samples-eval-v2-stsb-02",
+      "model": "bert-stsb",
+      "task": "stsb",
+      "split": "validation",
+      "source_id": "1204",
+      "original_row_index_zero_based": 1204,
+      "effective_length": 59,
+      "layout": "pad128",
+      "shape": [
+        3,
+        1,
+        128
+      ],
+      "processor_id": "bert-uncased-tokenizer-max128-unpadded-v1",
+      "tensor_sha256": "81d372ce92531e7453065a3afb4d50436338e8257266830379b7d30ef5f30578"
+    }
+  ]
+}

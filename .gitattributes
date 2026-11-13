@@ -1,0 +1,3 @@
+* text=auto eol=lf
+assets/reproduction/** -text
+frontends/vit/vit_schedule.json -text

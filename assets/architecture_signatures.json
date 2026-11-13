@@ -1,0 +1,11 @@
+{
+  "bert-cola": "df375748c4cac6885079c256b55df757ce3dabcecebfe52d065cdabe0c2dba3c",
+  "bert-mnli": "0bbcb76419ef2a2edd7c7323617fabde06891062cf59352dbb1940b4c630fe37",
+  "bert-mrpc": "df375748c4cac6885079c256b55df757ce3dabcecebfe52d065cdabe0c2dba3c",
+  "bert-qnli": "df375748c4cac6885079c256b55df757ce3dabcecebfe52d065cdabe0c2dba3c",
+  "bert-qqp": "df375748c4cac6885079c256b55df757ce3dabcecebfe52d065cdabe0c2dba3c",
+  "bert-rte": "df375748c4cac6885079c256b55df757ce3dabcecebfe52d065cdabe0c2dba3c",
+  "bert-sst2": "df375748c4cac6885079c256b55df757ce3dabcecebfe52d065cdabe0c2dba3c",
+  "bert-stsb": "bdff056ced5e79eda3f720b05536524c3300eeac36e18fc2776819efa894a2d9",
+  "vit-base-patch16-224": "3c8473e80202b857f767dea1258071b8a7deec66fc2454ad5ea7a162cee94965"
+}
