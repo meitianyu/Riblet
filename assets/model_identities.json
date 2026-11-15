@@ -1,0 +1,58 @@
+{
+  "schema": "riblet-supported-model-files-v1",
+  "models": {
+    "bert-cola": {
+      "config.json": "fca16cd3c45e3aa90ed95a6a22dca7b164aacb5a624eb14d083ebb46c264919a",
+      "flax_model.msgpack": "8ac8c7734941c428e9270953dcd732186b9a88173149b66397d04dd33a0f24e6",
+      "tokenizer.json": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344",
+      "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+    },
+    "bert-mnli": {
+      "config.json": "398d33b9ae523981d992bdf37dba02db33d910b9a8f58971a1562c9357e691d1",
+      "flax_model.msgpack": "e65fd1bca1b8e4b628c626b41ef2a7304799d10dee12a419667bbb330bed03f0",
+      "tokenizer.json": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344",
+      "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+    },
+    "bert-mrpc": {
+      "config.json": "fca16cd3c45e3aa90ed95a6a22dca7b164aacb5a624eb14d083ebb46c264919a",
+      "flax_model.msgpack": "70c3f58706cde6ecd68b1d37b7f40be4ae1e89c25d9576fd5ad2e12659c250bd",
+      "tokenizer.json": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344",
+      "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+    },
+    "bert-qnli": {
+      "config.json": "fca16cd3c45e3aa90ed95a6a22dca7b164aacb5a624eb14d083ebb46c264919a",
+      "flax_model.msgpack": "17e4e763e7aea8871b351e7fc80dd92e20f8b36b8fa887a6da77dd5857e2b6fd",
+      "tokenizer.json": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344",
+      "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+    },
+    "bert-qqp": {
+      "config.json": "fca16cd3c45e3aa90ed95a6a22dca7b164aacb5a624eb14d083ebb46c264919a",
+      "flax_model.msgpack": "d3179383bc6a32b69b8347b719142162cd7089410553601fd6a1b577a36b94c9",
+      "tokenizer.json": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344",
+      "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+    },
+    "bert-rte": {
+      "config.json": "fca16cd3c45e3aa90ed95a6a22dca7b164aacb5a624eb14d083ebb46c264919a",
+      "flax_model.msgpack": "3c8653a0b9ee7eb8d0b3a54dd6c06dade4a25bc8f141e65b1170975ddedfd727",
+      "tokenizer.json": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344",
+      "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+    },
+    "bert-sst2": {
+      "config.json": "fca16cd3c45e3aa90ed95a6a22dca7b164aacb5a624eb14d083ebb46c264919a",
+      "flax_model.msgpack": "2bb8e4febf8fb07a5b2e019636109eebaab067f265aa878c7b38b392f1db6c6a",
+      "tokenizer.json": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344",
+      "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+    },
+    "bert-stsb": {
+      "config.json": "a83eb5ee7b216103be4024e28b82d24f96643a3022ba287ce612d188857d85d7",
+      "flax_model.msgpack": "5aa0a157c63efac268762e6fb77e77c82ddb9d4241324c078919690e4555a994",
+      "tokenizer.json": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344",
+      "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+    },
+    "vit-base-patch16-224": {
+      "config.json": "abdf73cc4ce79495a83f32a8c9265daa7a1363f5a3efa4704c88a6e7f45ad19d",
+      "flax_model.msgpack": "e0c809a1fe1d79c51c4da8a9ebd6c0923bac317ca469a33c6620977054149471",
+      "preprocessor_config.json": "90d1ae427c27d2b9dcb01f6a62ba96aa67aac2de1697c59cd212055b5035c4a2"
+    }
+  }
+}

@@ -1,0 +1,379 @@
+# Copyright 2021 Ant Group Co., Ltd.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Modified for Riblet; see NOTICE.
+
+load("//bazel:spu.bzl", "spu_cc_library", "spu_cc_test", "spu_cc_binary")
+
+
+spu_cc_test(
+    name = "native_sync_material_test",
+    srcs = ["native_sync_material_test.cc"],
+    deps = ["//libspu/core:lifecycle_observer", ":protocol", ":state", ":type", ":cdi_material", "//libspu/mpc/common:pv2k", "//libspu/kernel/hal/intrinsic/nn:activation", "//libspu/mpc/utils:ring_ops", "//libspu/mpc/utils:simulate"],
+)
+
+spu_cc_test(
+    name = "cdi_compact_material_test",
+    size = "large",
+    timeout = "long",
+    srcs = ["cdi_compact_material_test.cc"],
+    deps = ["//libspu/core:lifecycle_observer", ":protocol", ":state", ":type", ":cdi_material", "//libspu/mpc/common:pv2k", "//libspu/core:type_util",
+            "//libspu/kernel/hal:fxp_approx", "//libspu/mpc/utils:ring_ops",
+            "//libspu/mpc/utils:simulate"],
+)
+
+
+package(default_visibility = ["//visibility:public"])
+
+cc_test(
+    name = "cdi_public_plan_test",
+    srcs = ["cdi_public_plan_test.cc"],
+    deps = [":protocol", "@com_google_googletest//:gtest_main"],
+)
+
+
+spu_cc_test(
+    name = "cdi_profile_switch_test",
+    srcs = ["cdi_profile_switch_test.cc"],
+    deps = ["//libspu/core:lifecycle_observer", ":cdi_inversion", ":protocol", ":type", "//libspu/core:type_util",
+            "//libspu/mpc/common:pv2k", "//libspu/mpc/utils:ring_ops", "//libspu/mpc/utils:simulate"],
+)
+
+spu_cc_library(
+    name = "cheetah",
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":io",
+        ":protocol",
+    ],
+)
+
+spu_cc_library(
+    name = "state",
+    srcs = ["state.cc"],
+    hdrs = ["state.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        "//libspu/mpc/cheetah/arith:cheetah_arith",
+        "//libspu/mpc/cheetah/nonlinear:cheetah_nonlinear",
+        "//libspu/mpc/cheetah/ot",
+        "//libspu/mpc/cheetah/rlwe:cheetah_rlwe",
+    ],
+)
+
+spu_cc_library(
+    name = "mjv",
+    srcs = ["mjv.cc"],
+    hdrs = ["mjv.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":mjv_linear",
+        ":mjv_object_context",
+        ":type",
+        "//libspu/core:value",
+        "//libspu/mpc:kernel",
+        "//libspu/mpc/common:communicator",
+        "//libspu/mpc/common:prg_state",
+        "//libspu/mpc/common:pv2k",
+        "//libspu/mpc/utils:ring_ops",
+    ],
+)
+
+spu_cc_library(
+    name = "cdi_material",
+    srcs = ["cdi_material.cc"],
+    hdrs = ["cdi_material.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":state",
+        "//libspu/core:prelude",
+        "//libspu/core:type_util",
+        "//libspu/core:value",
+        "//libspu/mpc:kernel",
+        "//libspu/mpc/common:communicator",
+        "//libspu/mpc/common:pv2k",
+        "//libspu/mpc/utils:ring_ops",
+    ],
+)
+
+spu_cc_library(
+    name = "cdi_inversion",
+    srcs = ["cdi_inversion.cc"],
+    hdrs = ["cdi_inversion.h", "cdi_schedule.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":type",
+        "//libspu/core:prelude",
+        "//libspu/core:type_util",
+        "//libspu/core:value",
+        "//libspu/kernel/hal:fxp_approx",
+        "//libspu/kernel/hal:fxp_base",
+        "//libspu/kernel/hal:ring",
+        "//libspu/kernel/hal:shape_ops",
+        "//libspu/mpc:kernel",
+        "//libspu/mpc/common:pv2k",
+    ],
+)
+
+spu_cc_library(
+    name = "mjv_linear",
+    srcs = ["mjv_linear.cc"],
+    hdrs = ["mjv_linear.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":mjv_object_context",
+        ":type",
+        "//libspu/core:context",
+        "//libspu/core:prelude",
+        "//libspu/core:shape",
+        "//libspu/core:value",
+        "//libspu/mpc:kernel",
+        "//libspu/mpc/common:communicator",
+        "//libspu/mpc/common:prg_state",
+        "//libspu/mpc/utils:ring_ops",
+    ],
+)
+
+spu_cc_library(
+    name = "mjv_object_context",
+    srcs = ["mjv_object_context.cc"],
+    hdrs = ["mjv_object_context.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        "//libspu/core:context",
+        "//libspu/core:prelude",
+        "//libspu/core:shape",
+        "//libspu/mpc/utils:ring_ops",
+    ],
+)
+
+spu_cc_library(
+    name = "tiled_dispatch",
+    srcs = ["tiled_dispatch.cc"],
+    hdrs = ["tiled_dispatch.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":state",
+        "//libspu/mpc/cheetah/ot",
+    ],
+)
+
+spu_cc_library(
+    name = "boolean",
+    srcs = [
+        "boolean.cc",
+        "boolean_semi2k.cc",
+    ],
+    hdrs = ["boolean.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":type",
+        ":tiled_dispatch",
+        "//libspu/mpc/common:communicator",
+    ],
+)
+
+spu_cc_library(
+    name = "conversion",
+    srcs = ["conversion.cc"],
+    hdrs = ["conversion.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":type",
+        ":tiled_dispatch",
+        "//libspu/core:vectorize",
+        "//libspu/mpc:ab_api",
+        "//libspu/mpc:kernel",
+        "//libspu/mpc/common:communicator",
+        "//libspu/mpc/cheetah/nonlinear:ring_ext_prot",
+    ],
+)
+
+spu_cc_library(
+    name = "arithmetic",
+    srcs = [
+        "arithmetic.cc",
+        "arithmetic_semi2k.cc",
+    ],
+    hdrs = ["arithmetic.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":mjv_linear",
+        ":type",
+        ":tiled_dispatch",
+        "//libspu/mpc/cheetah/arith:cheetah_arith",
+        "//libspu/mpc/cheetah/nonlinear:equal_prot",
+        "//libspu/mpc/cheetah/nonlinear:truncate_prot",
+    ],
+)
+
+spu_cc_library(
+    name = "protocol",
+    srcs = ["protocol.cc"],
+    hdrs = ["protocol.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":arithmetic",
+        ":boolean",
+        ":conversion",
+        ":cdi_inversion",
+        ":cdi_material",
+        ":mjv",
+        ":mjv_linear",
+        ":mjv_object_context",
+        ":state",
+        "//libspu/mpc/common:prg_state",
+        "//libspu/mpc/common:pv2k",
+        "//libspu/mpc/standard_shape:protocol",
+    ],
+)
+
+spu_cc_test(
+    name = "mjv_protocol_test",
+    size = "large",
+    timeout = "moderate",
+    srcs = ["mjv_protocol_test.cc"],
+    tags = ["exclusive-if-local"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":mjv_linear",
+        ":protocol",
+        "//libspu/mpc/semi2k:protocol",
+        "//libspu/mpc/utils:ring_ops",
+        "//libspu/mpc/utils:simulate",
+    ],
+)
+
+spu_cc_test(
+    name = "mjv_linear_test",
+    size = "large",
+    timeout = "moderate",
+    srcs = ["mjv_linear_test.cc"],
+    tags = ["exclusive-if-local"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":mjv_linear",
+        ":protocol",
+        "//libspu/mpc/utils:ring_ops",
+        "//libspu/mpc/utils:simulate",
+    ],
+)
+
+spu_cc_test(
+    name = "mjv_object_context_test",
+    size = "small",
+    srcs = ["mjv_object_context_test.cc"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":mjv_object_context",
+        "//libspu/core:type_util",
+        "//libspu/mpc/common:pv2k",
+        "//libspu/mpc/utils:ring_ops",
+    ],
+)
+
+
+
+spu_cc_test(
+    name = "cdi_inversion_protocol_test",
+    size = "large",
+    timeout = "moderate",
+    srcs = ["cdi_inversion_protocol_test.cc"],
+    tags = ["exclusive-if-local"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":cdi_inversion",
+        ":protocol",
+        "//libspu/core:type_util",
+        "//libspu/mpc/common:pv2k",
+        "//libspu/mpc/utils:ring_ops",
+        "//libspu/mpc/utils:simulate",
+    ],
+)
+
+spu_cc_test(
+    name = "cdi_probtrunc_protocol_test",
+    size = "large",
+    timeout = "moderate",
+    srcs = ["cdi_probtrunc_protocol_test.cc"],
+    tags = ["exclusive-if-local"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":cdi_material",
+        ":cdi_inversion",
+        ":protocol",
+        "//libspu/core:context",
+        "//libspu/core:trace",
+        "//libspu/core:type_util",
+        "//libspu/kernel/hal:ring",
+        "//libspu/mpc/common:pv2k",
+        "//libspu/mpc/utils:ring_ops",
+        "//libspu/mpc/utils:simulate",
+    ],
+)
+
+spu_cc_test(
+    name = "cdi_material_protocol_test",
+    size = "large",
+    timeout = "moderate",
+    srcs = ["cdi_material_protocol_test.cc"],
+    deps = ["//libspu/core:lifecycle_observer", ":cdi_material", ":state", ":protocol", ":type",
+        "//libspu/core:type_util", "//libspu/mpc/common:pv2k",
+        "//libspu/mpc/utils:ring_ops", "//libspu/mpc/utils:simulate"],
+)
+
+spu_cc_library(
+    name = "alg",
+    srcs = ["alg.cc"],
+    hdrs = ["alg.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":arithmetic",
+        ":boolean",
+        ":conversion",
+        ":tiled_dispatch",
+        "//libspu/core:encoding",
+    ],
+)
+
+spu_cc_test(
+    name = "protocol_api_test",
+    size = "large",
+    timeout = "moderate",
+    srcs = ["protocol_api_test.cc"],
+    tags = [
+        "exclusive-if-local",
+    ],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":protocol",
+        "//libspu/mpc:api_test",
+    ],
+)
+
+spu_cc_test(
+    name = "protocol_ab_test",
+    size = "large",
+    timeout = "moderate",
+    srcs = ["protocol_ab_test.cc"],
+    tags = [
+        "exclusive-if-local",
+    ],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":protocol",
+        "//libspu/mpc:ab_api_test",
+    ],
+)
+
+spu_cc_library(
+    name = "io",
+    srcs = ["io.cc"],
+    hdrs = ["io.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        ":type",
+        "//libspu/mpc:io_interface",
+        "//libspu/mpc/utils:ring_ops",
+    ],
+)
+
+spu_cc_library(
+    name = "type",
+    srcs = ["type.cc"],
+    hdrs = ["type.h"],
+    deps = ["//libspu/core:lifecycle_observer", 
+        "//libspu/core:type",
+        "//libspu/mpc/common:pv2k",
+    ],
+)

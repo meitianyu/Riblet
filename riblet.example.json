@@ -1,0 +1,56 @@
+{
+  "host_role": "model",
+  "profile": "paper",
+  "model": {
+    "name": "bert-cola",
+    "checkpoint_dir": "resources/model-bert-cola-v1",
+    "preprocessor_dir": "resources/preprocess-bert-v1"
+  },
+  "parties": {
+    "model": {
+      "endpoint": "model-host:19001",
+      "work_dir": "work/model"
+    },
+    "data": {
+      "endpoint": "data-host:19001",
+      "work_dir": "work/data"
+    }
+  },
+  "runtime": {
+    "installation": ".venv/installation.json",
+    "resource_profile": "full64",
+    "network_label": "unshaped"
+  },
+  "parameters": {
+    "source": "frozen",
+    "frozen_source": "resources/parameters-bert-v2/pad128",
+    "package_dir": "parameters/cola-paper"
+  },
+  "resources": {
+    "catalogue": "assets/resources.json",
+    "local_dir": null,
+    "cache": "resource-cache",
+    "directory": "resources"
+  },
+  "datasets": {
+    "directory": "datasets"
+  },
+  "request": {
+    "id": "repro-cola01-lan-001",
+    "paper_sample": "samples-eval-v2-cola-01",
+    "input": null
+  },
+  "output_root": "results-local",
+  "construction": {
+    "split": "train",
+    "data_root": "datasets/glue",
+    "dataset_version": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+    "membership": "resources/construction-bert-v2/bert-development-membership.json",
+    "models_root": "construction-models",
+    "selection": {
+      "mode": "paper"
+    },
+    "workers": 16,
+    "output_dir": "construction/cola-paper"
+  }
+}

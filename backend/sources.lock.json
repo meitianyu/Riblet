@@ -1,0 +1,10 @@
+{
+  "OpenBumbleBee": {
+    "repository": "https://github.com/AntCPLab/OpenBumbleBee",
+    "revision": "47c5560d069543591f3b0176eb530ede28e33fc3"
+  },
+  "SPU": {
+    "repository": "https://github.com/secretflow/spu",
+    "revision": "724d3d1c3c37e891fcd0493a6cff0bf4310eda70"
+  }
+}

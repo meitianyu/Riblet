@@ -1,0 +1,15 @@
+Riblet
+Copyright 2026 Riblet contributors.
+
+Riblet contains additions and modifications to SPU/OpenBumbleBee-derived source.
+SPU and OpenBumbleBee retain their original copyright and attribution notices.
+Original source-file notices and backend LICENSE files remain applicable.
+
+Upstream projects:
+  SPU: https://github.com/secretflow/spu
+  OpenBumbleBee: https://github.com/AntCPLab/OpenBumbleBee
+
+Riblet-owned additions and authorized modifications use Apache License 2.0.
+This notice does not relicense third-party works, grant rights to model weights
+or datasets, or imply upstream endorsement. See THIRD_PARTY_NOTICES.md and
+MODIFICATIONS.md for scope and provenance.
